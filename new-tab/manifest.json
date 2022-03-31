@@ -1,0 +1,17 @@
+{
+    "name": "00 Team New Tab",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "00 Team Custom New Tab",
+
+    "icons": {
+        "16": "images/00.png",
+        "32": "images/00.png",
+        "48": "images/00.png",
+        "128": "images/00.png"
+    },
+
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}
