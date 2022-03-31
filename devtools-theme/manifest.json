@@ -1,0 +1,15 @@
+{
+    "name": "00 Team DevTools Theme",
+    "version": "1.1",
+    "manifest_version": 3,
+    "description": "00 Team Theme for Chrome DevTools",
+
+    "devtools_page": "devtools.html",
+
+    "icons": {
+        "16": "images/00.png",
+        "32": "images/00.png",
+        "48": "images/00.png",
+        "128": "images/00.png"
+    }
+}
