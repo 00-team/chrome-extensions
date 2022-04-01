@@ -4,11 +4,10 @@
 
 ## Basic Usage
 
-since this packages are unpacked and not published into the google chrome webstore
-for using them you need to frist open chrome extensions page `chrome://extensions/`
+Since these packages are unpacked and not published into the google chrome web store for using them, you need to: first, open the chrome extensions page `chrome://extensions/`
 
-then make sure `Developer mode` toggle checkbox at top right of the page is ON
+Then make sure the Developer mode toggle checkbox at the top right of the page is ON
 
 ![showcase-1](images/showcase-1.png)
 
-after that you can click on `Load unpacked` button and load your extension
+After that, you can click on the Load unpacked button and load your extensio
