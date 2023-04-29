@@ -1,0 +1,31 @@
+.ContributionCalendar-day[data-level='4'] {
+    background-color: var(--color-calendar-winter-graph-day-L4-bg) !important;
+    fill: var(--color-calendar-winter-graph-day-L4-bg) !important;
+}
+
+.ContributionCalendar-day[data-level='3'] {
+    background-color: var(--color-calendar-winter-graph-day-L3-bg) !important;
+    fill: var(--color-calendar-winter-graph-day-L3-bg) !important;
+}
+
+.ContributionCalendar-day[data-level='2'] {
+    background-color: var(--color-calendar-winter-graph-day-L2-bg) !important;
+    fill: var(--color-calendar-winter-graph-day-L2-bg) !important;
+}
+
+.ContributionCalendar-day[data-level='1'] {
+    background-color: var(--color-calendar-winter-graph-day-L1-bg) !important;
+    fill: var(--color-calendar-winter-graph-day-L1-bg) !important;
+}
+
+.activity-overview-axis,
+.activity-overview-point {
+    stroke: var(--color-calendar-winter-graph-day-L4-bg) !important;
+}
+
+.js-activity-overview-graph .js-highlight-blob {
+    fill: var(--color-calendar-winter-graph-day-L4-bg) !important;
+    stroke: var(--color-calendar-winter-graph-day-L3-bg) !important;
+}
+
+/* --color-calendar-halloween-graph-day-L1-bg */
