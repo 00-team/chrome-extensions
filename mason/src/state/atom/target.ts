@@ -16,7 +16,8 @@ const TargetAtom = atom(
         }
 
         set(Target, data)
-        database.save(data)
+        console.log('save')
+        // chrome.storage.sync.set()
     }
 )
 
