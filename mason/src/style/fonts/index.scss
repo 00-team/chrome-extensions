@@ -1,0 +1,20 @@
+// @mixin MainFont($s: 18px) {
+//     font-size: $s;
+//     font-family: $MAIN, $BACKUP;
+// }
+
+// @mixin DisplayFont($s: 18px) {
+//     font-size: $s;
+//     font-family: $DISPLAY, $BACKUP;
+//     text-transform: uppercase;
+// }
+
+@mixin TitleFont($s: 20px) {
+    font-size: $s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@mixin TextFont($s: 18px) {
+    font-size: $s;
+    font-family: 'Maven Pro', sans-serif;
+}

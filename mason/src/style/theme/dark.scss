@@ -1,0 +1,23 @@
+@mixin dark {
+    color-scheme: dark;
+
+    --primary-color: #040404;
+    --accent-color: #f2f2f2;
+    --other-color: #272727;
+
+    --base-red: #c30a0a;
+    --base-green: #00d076;
+    --base-blue: #0260e8;
+    --base-yellow: #ffc11e;
+    --base-pink: #fc008b;
+    --base-purple: #580be4;
+    --base-dark-white: #d0d0d0;
+
+    // header colors
+    --header-bg: #101010;
+    --header-actions-bg: #222;
+    --header-minimize-hover: #333;
+
+    // categories
+    --categories-actions-bg: #171717;
+}

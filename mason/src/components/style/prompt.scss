@@ -1,0 +1,69 @@
+@use 'fonts' as *;
+@use '@00-team/utils' as *;
+
+.prompt {
+    position: absolute;
+    background: #040404;
+    border: 2px solid var(--base-purple);
+    border-radius: 7px;
+    width: 30vw;
+    padding: 1rem;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .title {
+        @include TitleFont(25px);
+    }
+
+    textarea {
+        font-family: monospace;
+        font-size: 18px;
+        border: 2px solid var(--base-purple);
+        background: #111;
+
+        color: #aaa;
+        width: 100%;
+        padding: 0.4rem;
+        border-radius: 7px;
+        resize: vertical;
+        height: fit-content;
+        max-height: 300px;
+        min-height: 120px;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &::-webkit-scrollbar-button {
+            display: none;
+        }
+        &::-webkit-scrollbar-corner {
+            background-color: #111;
+        }
+    }
+
+    .actions {
+        display: flex;
+        gap: 1rem;
+
+        button {
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 0.1rem 1rem;
+            width: 100%;
+            border: 1px solid red;
+            background: transparent;
+            @include TextFont(22px);
+
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+}

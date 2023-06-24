@@ -1,0 +1,136 @@
+@use 'fonts' as *;
+
+.road .target {
+    border: 1px solid var(--base-yellow);
+    width: 100%;
+    border-radius: 5px;
+
+    .head {
+        display: flex;
+        height: 3.3rem;
+        padding: 0.5rem;
+        align-items: center;
+        gap: 0.3rem;
+
+        .title {
+            cursor: pointer;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @include TitleFont(20px);
+        }
+
+        .del,
+        .done-box {
+            border-radius: 5px;
+            flex-shrink: 0;
+            height: 100%;
+            aspect-ratio: 1;
+            cursor: pointer;
+            padding: 0.1rem;
+            border: 1px solid var(--base-yellow);
+        }
+
+        .done-box {
+            color: var(--base-green);
+
+            &.active {
+                border-color: var(--primary-color);
+            }
+        }
+
+        .del {
+            border-color: var(--primary-color);
+            color: var(--base-red);
+        }
+    }
+
+    .detail {
+        @include TextFont(18px);
+        height: 0px;
+        overflow: hidden;
+        word-break: break-all;
+
+        &.show {
+            padding: 1rem;
+            height: max-content;
+        }
+
+        &.empty {
+            color: #666;
+        }
+    }
+
+    &.done {
+        border-color: var(--base-green);
+    }
+}
+.target {
+    border: 1px solid var(--base-yellow);
+    width: 100%;
+    border-radius: 5px;
+
+    .head {
+        display: flex;
+        height: 3.3rem;
+        padding: 0.5rem;
+        align-items: center;
+        gap: 0.3rem;
+
+        .title {
+            cursor: pointer;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @include TitleFont(20px);
+        }
+
+        .del,
+        .done-box {
+            border-radius: 5px;
+            flex-shrink: 0;
+            height: 100%;
+            aspect-ratio: 1;
+            cursor: pointer;
+            padding: 0.1rem;
+            border: 1px solid var(--base-yellow);
+        }
+
+        .done-box {
+            color: var(--base-green);
+
+            &.active {
+                border-color: var(--primary-color);
+            }
+        }
+
+        .del {
+            border-color: var(--primary-color);
+            color: var(--base-red);
+        }
+    }
+
+    .detail {
+        @include TextFont(18px);
+        height: 0px;
+        overflow: hidden;
+        word-break: break-all;
+
+        &.show {
+            padding: 1rem;
+            height: max-content;
+        }
+
+        &.empty {
+            color: #666;
+        }
+    }
+
+    &.done {
+        border-color: var(--base-green);
+    }
+}
