@@ -1,1 +1,1 @@
-export * from './atom/target'
+export * from './target'

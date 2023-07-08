@@ -6,7 +6,7 @@ import { PromptContext } from 'PromptContext'
 import { Done, Trash } from 'icon'
 
 import { useSetAtom } from 'jotai'
-import { TargetAtom } from 'state'
+import { TargetAtom, TargetModel } from 'state'
 
 import './style/target.scss'
 
@@ -25,7 +25,9 @@ const Target: FC<Props> = ({ id, title, detail, done }) => {
                 <span
                     className='title'
                     onClick={() => setShow(s => !s)}
-                    onContextMenu={() =>
+                    onContextMenu={e => {
+                        e.preventDefault()
+
                         setPrompt({
                             isOpen: true,
                             title: 'Enter Title',
@@ -36,7 +38,7 @@ const Target: FC<Props> = ({ id, title, detail, done }) => {
                                     return [...s]
                                 }),
                         })
-                    }
+                    }}
                 >
                     {title || '---'}
                 </span>
@@ -65,7 +67,8 @@ const Target: FC<Props> = ({ id, title, detail, done }) => {
             </div>
             <p
                 className={'detail' + C(show, 'show') + C(!detail, 'empty')}
-                onContextMenu={() =>
+                onContextMenu={e => {
+                    e.preventDefault()
                     setPrompt({
                         isOpen: true,
                         title: 'Enter Details',
@@ -76,7 +79,7 @@ const Target: FC<Props> = ({ id, title, detail, done }) => {
                                 return [...s]
                             }),
                     })
-                }
+                }}
             >
                 {detail.length
                     ? detail.split('\n').map((s, idx) => (

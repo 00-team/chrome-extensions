@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Icon } from './types'
+
 const Plus: Icon = attr => (
     <svg
         xmlns='http://www.w3.org/2000/svg'

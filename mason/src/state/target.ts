@@ -1,5 +1,11 @@
 import { atom } from 'jotai'
 
+type TargetModel = {
+    title: string
+    detail: string
+    done: boolean
+}
+
 const Target = atom<TargetModel[]>([])
 
 type Args = TargetModel[] | ((t: TargetModel[]) => TargetModel[])
@@ -16,9 +22,12 @@ const TargetAtom = atom(
         }
 
         set(Target, data)
-        console.log('save')
-        // chrome.storage.sync.set()
+        chrome.storage.sync.set({
+            mason: {
+                targets: data,
+            },
+        })
     }
 )
 
-export { TargetAtom }
+export { TargetAtom, TargetModel }
