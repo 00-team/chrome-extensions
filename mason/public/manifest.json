@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "manifest_version": 3,
 
-    "permissions": ["tabs", "storage"],
+    "permissions": ["tabs", "storage", "downloads"],
 
     "action": {
         "default_popup": "popup.html"
