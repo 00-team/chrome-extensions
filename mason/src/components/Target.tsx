@@ -55,12 +55,14 @@ const Target: FC<Props> = ({ id, title, detail, done }) => {
                 </div>
                 <div
                     className='del'
-                    onClick={() =>
-                        setTargets(s => {
-                            s.splice(id, 1)
-                            return [...s]
-                        })
-                    }
+                    onClick={e => {
+                        if (e.shiftKey || confirm('are you sure')) {
+                            setTargets(s => {
+                                s.splice(id, 1)
+                                return [...s]
+                            })
+                        }
+                    }}
                 >
                     <Trash />
                 </div>
