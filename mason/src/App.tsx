@@ -5,7 +5,7 @@ import { Plus } from 'icon'
 import { useAtom } from 'jotai'
 import { TargetAtom } from 'state'
 
-import { Target } from 'components/Target'
+import { Target, Load, Save } from 'components'
 
 import './style/base.scss'
 import './style/fonts/imports.scss'
@@ -20,6 +20,10 @@ const App: FC = () => {
 
     return (
         <main>
+            <div className='actions'>
+                <Load />
+                <Save />
+            </div>
             <div className='road'>
                 <button
                     className='add-btn'

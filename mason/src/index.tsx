@@ -1,7 +1,7 @@
 import React, { FC, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import { Prompt } from 'components/Prompt'
+import { Prompt } from 'components'
 
 import App from './App'
 import { PromptContextProvider } from './PromptContext'
