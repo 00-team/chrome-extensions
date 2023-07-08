@@ -23,9 +23,7 @@ const TargetAtom = atom(
 
         set(Target, data)
         chrome.storage.sync.set({
-            mason: {
-                targets: data,
-            },
+            mason_targets: data,
         })
     }
 )

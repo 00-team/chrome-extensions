@@ -15,7 +15,9 @@ const App: FC = () => {
     const [targets, setTargets] = useAtom(TargetAtom)
 
     useEffect(() => {
-        console.log('load the plans')
+        chrome.storage.sync.get('mason_targets').then(({ mason_targets }) => {
+            setTargets(mason_targets || [])
+        })
     }, [])
 
     return (
