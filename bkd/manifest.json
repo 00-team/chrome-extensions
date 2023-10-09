@@ -20,5 +20,11 @@
             "js": ["src/bk.js"],
             "run_at": "document_start"
         }
-    ]
+    ],
+
+    "permissions": ["downloads", "nativeMessaging"],
+
+    "background": {
+        "service_worker": "src/worker.js"
+    }
 }

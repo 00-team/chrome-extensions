@@ -59,6 +59,8 @@ function show() {
 
         download_group = document.createElement('div')
 
+        let filename = data.name.replace(' ', '-').toLowerCase() + '.blend'
+
         data.files.forEach(f => {
             if (f.fileType == 'thumbnail') return
 
@@ -79,8 +81,11 @@ function show() {
                 url.searchParams.set('format', 'json')
                 let res = await fetch(url)
                 let data = await res.json()
-                open(data.filePath)
-                navigator.clipboard.writeText(data.filePath)
+                await chrome.runtime.sendMessage({
+                    type: 'download',
+                    filename,
+                    url: data.filePath,
+                })
             }
             download_group.appendChild(b)
         })
