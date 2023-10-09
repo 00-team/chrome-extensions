@@ -1,0 +1,24 @@
+{
+    "name": "BlenderKit Downloader",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "inpage downloader for blenderkit",
+
+    "icons": {
+        "16": "images/00.png",
+        "32": "images/00.png",
+        "48": "images/00.png",
+        "128": "images/00.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.blenderkit.com/asset-gallery*",
+                "https://*.blenderkit.com/asset-gallery-detail*"
+            ],
+            "js": ["src/bk.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
