@@ -11,6 +11,12 @@
 
     --color-background-highlight: #151515 !important;
 
+    --sys-color-cdt-base-container: #040404 !important;
+    --sys-color-cdt-base: #040404 !important;
+    --sys-color-surface2: #040404 !important;
+
+    --sys-color-tonal-container: #121212 !important;
+    --sys-color-tonal-outline: #202020 !important;
 
     /* --color-token-comment
     --color-token-attribute
@@ -19,11 +25,13 @@
      */
 }
 
-:host-context(.-theme-with-dark-background) .device-mode-content-clip:not(.device-mode-outline-visible) .device-mode-screen-area {
+:host-context(.-theme-with-dark-background)
+    .device-mode-content-clip:not(.device-mode-outline-visible)
+    .device-mode-screen-area {
     --override-screen-area-box-shadow: #222 0 0 20px 2px;
 }
 
-input[type=number] {
+input[type='number'] {
     background-color: #040404;
     border: #777 1px solid !important;
     border-radius: 2px;
@@ -48,7 +56,6 @@ input[type=number] {
     background-color: #0000 !important;
 }
 
-
 .tabbed-pane-header-tabs-drop-down-container {
     /* border-bottom: 2px solid #0000; */
     box-sizing: border-box;
@@ -64,13 +71,12 @@ input[type=number] {
     cursor: pointer;
 }
 
-.force-white-icons [is=ui-icon].spritesheet-smallicons,
-:host-context(.force-white-icons) [is=ui-icon].spritesheet-smallicons,
-[is=ui-icon].force-white-icons.spritesheet-smallicons,
+.force-white-icons [is='ui-icon'].spritesheet-smallicons,
+:host-context(.force-white-icons) [is='ui-icon'].spritesheet-smallicons,
+[is='ui-icon'].force-white-icons.spritesheet-smallicons,
 .-theme-preserve {
     filter: none !important;
 }
-
 
 .cm-js-string {
     color: #b0ffa2 !important;
@@ -82,26 +88,23 @@ input[type=number] {
 }
 
 .cm-js-number {
-    color: #00DC7D !important;
+    color: #00dc7d !important;
 }
 
 .toolbar-input,
 .soft-context-menu,
-.styles-sidebar-pane-filter-box>input {
+.styles-sidebar-pane-filter-box > input {
     border-radius: 3px !important;
 }
 
-
 /* html tags */
 .webkit-html-tag {
-    color: #FFCB6B !important;
+    color: #ffcb6b !important;
 }
 
 .webkit-html-attribute-value {
     color: #b0ffa2 !important;
 }
-
-
 
 .node-label-name {
     color: #569cd6 !important;
@@ -140,7 +143,6 @@ input[type=number] {
 
 .devtools-link.devtools-link-styled-trim {
     color: #b0ffa2 !important;
-
 }
 
 input {
