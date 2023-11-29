@@ -149,3 +149,9 @@ input {
     filter: none !important;
     accent-color: #f9ca24 !important;
 }
+
+.console-message-anchor {
+    display: block !important;
+    margin-bottom: 1rem !important;
+    width: 100% !important;
+}
