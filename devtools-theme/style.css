@@ -6,6 +6,8 @@
     --override-dark-mode-focus-color: #0000 !important;
 
     --color-syntax-1: #b0ffa2 !important;
+    --sys-color-token-property-special: #b0ffa2 !important;
+    --sys-color-token-number: #00dc7d !important;
 
     --color-background-elevation-0: #040404 !important;
 
@@ -78,7 +80,9 @@ input[type='number'] {
     filter: none !important;
 }
 
-.cm-js-string {
+.cm-js-string,
+.object-value-string,
+.token-string {
     color: #b0ffa2 !important;
 }
 
@@ -87,7 +91,9 @@ input[type='number'] {
     color: #f375f3 !important;
 }
 
-.cm-js-number {
+.cm-js-number,
+.object-value-number,
+.token-number {
     color: #00dc7d !important;
 }
 
@@ -137,7 +143,8 @@ input[type='number'] {
     color: #00dc7d !important;
 }
 
-:host-context(.matched-styles) .tree-outline li .value devtools-color-swatch {
+:host-context(.matched-styles) .tree-outline li .value devtools-color-swatch,
+.token-keyword {
     color: #ff2457 !important;
 }
 
