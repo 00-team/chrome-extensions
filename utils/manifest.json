@@ -1,16 +1,22 @@
 {
-    "name": "Utils",
+    "name": "00 Team Utils",
     "version": "1.0",
     "manifest_version": 3,
     "description": "useful utils",
-
     "icons": {
         "16": "images/00.png",
         "32": "images/00.png",
         "48": "images/00.png",
         "128": "images/00.png"
     },
-
+    "commands": {
+        "skip-1-30": {
+            "suggested_key": {
+                "default": "Ctrl+Space"
+            },
+            "description": "skip 1:30 of currently playing video"
+        }
+    },
     "content_scripts": [
         {
             "matches": [
@@ -21,10 +27,9 @@
             "run_at": "document_start"
         }
     ],
-
-    "permissions": ["downloads", "nativeMessaging"],
-
+    "permissions": ["downloads", "nativeMessaging", "scripting", "activeTab"],
     "background": {
         "service_worker": "src/worker.js"
-    }
+    },
+    "host_permissions": ["https://*/*", "http://*/*"]
 }
