@@ -1,8 +1,8 @@
 {
-    "name": "BlenderKit Downloader",
+    "name": "Utils",
     "version": "1.0",
     "manifest_version": 3,
-    "description": "inpage downloader for blenderkit",
+    "description": "useful utils",
 
     "icons": {
         "16": "images/00.png",
@@ -17,7 +17,7 @@
                 "https://*.blenderkit.com/asset-gallery*",
                 "https://*.blenderkit.com/asset-gallery-detail*"
             ],
-            "js": ["src/bk.js"],
+            "js": ["src/blenderkit.js"],
             "run_at": "document_start"
         }
     ],
