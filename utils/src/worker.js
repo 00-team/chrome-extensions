@@ -16,5 +16,17 @@ chrome.commands.onCommand.addListener((cmd, tab) => {
             },
             files: ['src/skip.js'],
         })
+    } else if (cmd == 'close-dup') {
+        let tabs = new Set()
+        chrome.tabs.query({}, res => {
+            res.forEach(t => {
+                console.log(t)
+                if (tabs.has(t.url)) {
+                    chrome.tabs.remove(t.id)
+                } else {
+                    tabs.add(t.url)
+                }
+            })
+        })
     }
 })
