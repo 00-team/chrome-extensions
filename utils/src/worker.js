@@ -20,7 +20,6 @@ chrome.commands.onCommand.addListener((cmd, tab) => {
         let tabs = new Set()
         chrome.tabs.query({}, res => {
             res.forEach(t => {
-                console.log(t)
                 if (tabs.has(t.url)) {
                     chrome.tabs.remove(t.id)
                 } else {
